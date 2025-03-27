@@ -5,7 +5,10 @@ const HeroSection = () => {
   return (
     <section className="bg-[#fdf9f3] py-20 flex flex-col items-center md:flex-row md:justify-center px-6 md:px-20">
       <div className="text-center md:text-left max-w-lg">
-        <h1 className="text-6xl md:text-6xl lg:text-6xl font-bold text-black leading-tight">
+        <h1
+          style={{ fontFamily: "'Boogaloo', cursive" }}
+          className="text-6xl md:text-6xl lg:text-6xl font-bold text-black leading-tight"
+        >
           Get 1000 hours <br /> of world-class <br /> stories,{" "}
           <span className="text-black">free.</span>
         </h1>

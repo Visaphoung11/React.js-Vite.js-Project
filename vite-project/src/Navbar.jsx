@@ -120,7 +120,12 @@ const Navbar = () => {
   return (
     <nav className="navbar sticky top-0 z-50 flex justify-between items-center p-4 bg-[#FFF8F0] shadow-xl relative">
       {/* Logo aligned to the left */}
-      <div className="text-red-600 font-bold text-xl">SOOPER BOOKS</div>
+      <div
+        style={{ fontFamily: "'Boogaloo', cursive" }}
+        className="text-red-600 font-bold text-xl lg:ml-60"
+      >
+        SOOPER BOOKS
+      </div>
 
       {/* Centered navigation links */}
       <div className="flex gap-6 items-center bg-white border border-red-600 rounded-full px-6 py-2 mx-auto">
@@ -162,20 +167,20 @@ const Navbar = () => {
             <div>
               <p className="text-white font-semibold">Categories:</p>
               <ul className="mt-2 space-y-2">
-                <li className="p-2 border-b hover:bg-gray-100 transition">
+                <li className="p-2 border-b hover:bg-pink-500 transition">
                   <a href="#kids" className="text-white hover:text-red-600">
                     📖 Kids 0-5
                   </a>
                 </li>
-                <li className="p-2 border-b hover:bg-gray-100 transition">
+                <li className="p-2 border-b hover:bg-pink-500 transition">
                   <a href="#comics" className="text-white hover:text-red-600">
                     🦸 Comics
                   </a>
                 </li>
-                <li className="p-2 hover:bg-gray-100 transition">
+                <li className="p-2 hover:bg-pink-500 transition">
                   <a
                     href="#short-stories"
-                    className="text-white hover:text-red-600"
+                    className="text-white hover:text-white"
                   >
                     📚 Short Stories
                   </a>
@@ -187,7 +192,7 @@ const Navbar = () => {
             <div>
               <p className="text-white font-semibold">Audio Categories:</p>
               <ul className="mt-2 space-y-2">
-                <li className="p-2 border-b hover:bg-gray-100 transition">
+                <li className="p-2 border-b hover:bg-pink-500 transition">
                   <a
                     href="#bedtime-stories"
                     className="text-white hover:text-red-600"
@@ -195,7 +200,7 @@ const Navbar = () => {
                     🌙 Bedtime Stories
                   </a>
                 </li>
-                <li className="p-2 hover:bg-gray-100 transition">
+                <li className="p-2 hover:bg-pink-500 transition">
                   <a
                     href="#adventure-tales"
                     className="text-white hover:text-red-600"
@@ -208,11 +213,11 @@ const Navbar = () => {
           )}
           {activeTab === "Search" && (
             <div className="flex items-center border border-gray-300 rounded-md p-2 shadow-inner">
-              <Search size={20} className="text-gray-500" />
+              <Search size={50} className="text-pink-800" />
               <input
                 type="text"
                 placeholder="Search books..."
-                className="ml-2 outline-none w-full"
+                className="ml-2 outline-none w-full text-amber-300"
               />
             </div>
           )}
